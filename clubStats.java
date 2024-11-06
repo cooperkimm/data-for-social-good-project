@@ -7,7 +7,7 @@ public class clubStats{
   private String leagues;
   private int goalsAssists;
   private String isChampionsLeague;
-  
+ 
   /*
   * This is the parameterized constructors that assigns specific values using the "this" word
   */
@@ -17,9 +17,18 @@ public class clubStats{
     this.goalsAssists = goalsAssists;
     this.isChampionsLeague = isChampionsLeague;
   }
+  /*
+  * No argument Constuctor
+  */
+  public clubStats(){
+    clubs = "";
+    leagues = "";
+    goalsAssists = 0;
+    isChampionsLeague = "";
+  }
 
   /*
-  * These are the getter methods also known as the accessor methods. They get the values of the user and return it. For example, gets name, returns league. 
+  * These are the getter methods also known as the accessor methods. They get the values of the user and return it. For example, gets name, returns league.
   */
   public String getClubs(){
     return clubs;
@@ -35,7 +44,7 @@ public class clubStats{
   public String getisChampionsleague(){
     return isChampionsLeague;
   }
-  
+ 
   /*
   * This is the toString method that returns the information that is necessary.
   */
